@@ -1,0 +1,15 @@
+OOP - A method of organizing and structuring code that is based on the idea of "objects" is known as object-oriented programming (OOP). 
+Data and the logic to alter that data are both included in self-contained units called objects. 
+In OOP, real-world entities are frequently represented by objects, and the actions and behaviors of those entities are represented by the code included within each object. 
+OOP seeks to increase the reusability, and maintainability of code, which can be very useful when working on extensive, intricate projects.
+
+Encapsulation - Refers to the idea of bundling data and the methods that operate on that data within a single unit, or "object". 
+Encapsulation helps to protect the data within an object from being accessed or modified by code outside the object.
+
+Inheritance - This allows one object to inherit characteristics and behavior from a parent object. 
+This can help to reduce code duplication and make it easier to create and maintain a large codebase.
+
+Polymorphism -  This refers to the ability of different objects to respond differently to the same method or message. 
+Polymorphism allows a programmer to write code that can operate on a variety of different objects, even if those objects have different characteristics and behaviors.
+
+Abstraction - Abstraction in OOP is when only the relevent details are given to the user, hiding the unecessary information. 
