@@ -27,3 +27,5 @@ class RichardMena extends Me {
 let richardMena = new RichardMena("Richard");
 console.log(richardMena.greeting());
 console.log(richardMena.work());
+
+//Provides us the ability to use any class that extends the 'Me' in the same way regardless of implementation details

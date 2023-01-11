@@ -25,3 +25,7 @@ let person = new Person("Richard Mena", 21);
 
 console.log(person.getName()); // Output: "Richard Mena"
 console.log(person.getAge()); // Output: 21
+
+//The class ensures that the data fields are only modified by the class, and not by other code.
+//The class is easier to understand and maintain because it presents a single,
+//consistent interface for interacting with it, rather than exposing all of its implementation details.

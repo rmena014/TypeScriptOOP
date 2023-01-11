@@ -23,7 +23,7 @@ class SportsCar extends Car {
 class Sedan extends Car {
   // override the honk method
   honk(): void {
-    console.log(`The sedate ${this.make} ${this.model} is honking politely.`);
+    console.log(`The sedan ${this.make} ${this.model} is honking politely.`);
   }
 }
 
@@ -36,4 +36,4 @@ mustang.drive(); // "The sporty Ford Mustang is driving fast!"
 mustang.honk(); // "The Ford Mustang is honking."
 
 camry.drive(); // "The Toyota Camry is driving."
-camry.honk(); // "The sedate Toyota Camry is honking politely."
+camry.honk(); // "The sedan Toyota Camry is honking politely."
