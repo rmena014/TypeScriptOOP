@@ -1,24 +1,3 @@
-// class EncapsulationExample {
-//   private data: string;
-
-//   constructor(data: string) {
-//     this.data = data;
-//   }
-
-//   getData(): string {
-//     return this.data;
-//   }
-
-//   setData(data: string): void {
-//     this.data = data;
-//   }
-// }
-
-// let example = new EncapsulationExample("Hello, World!");
-// console.log(example.getData()); // Output: "Hello, World!"
-// example.setData("Hello, TypeScript!");
-// console.log(example.getData()); // Output: "Hello, TypeScript!"
-
 class Person {
   private name: string;
   private age: number;
@@ -31,7 +10,7 @@ class Person {
   }
 
   // Returns the current value of the name field
-  getName(): string { 
+  getName(): string {
     return this.name;
   }
 
