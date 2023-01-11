@@ -18,7 +18,7 @@ class RichardMena extends Me {
   }
 
   work(): string {
-    return `${this.name} is a software developer`;
+    return `${this.name} is a Road to Hire apprentice`;
   }
   //Implemented the speak and work methods
 }
