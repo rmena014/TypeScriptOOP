@@ -1,39 +1,39 @@
-class Car {
-  // constructor method
-  constructor(public make: string, public model: string) {}
+//Polymorphism is a concept in object-oriented programming that refers to the ability of a single interface or method to be used to represent or operate on multiple types of objects.
 
-  // method 1: drive
-  drive(): void {
-    console.log(`The ${this.make} ${this.model} is driving.`);
-  }
-
-  // method 2: honk
-  honk(): void {
-    console.log(`The ${this.make} ${this.model} is honking.`);
+class Shape {
+  //base class
+  area(): number {
+    return 0;
   }
 }
 
-class SportsCar extends Car {
-  // override the drive method
-  drive(): void {
-    console.log(`The sporty ${this.make} ${this.model} is driving fast!`);
+class Rectangle extends Shape {
+  //overides the area method
+  constructor(public width: number, public height: number) {
+    super();
+  }
+
+  area(): number {
+    return this.width * this.height;
   }
 }
 
-class Sedan extends Car {
-  // override the honk method
-  honk(): void {
-    console.log(`The sedan ${this.make} ${this.model} is honking politely.`);
+class Circle extends Shape {
+  //overides the area method
+  constructor(public radius: number) {
+    super();
+  }
+
+  area(): number {
+    return 3.14 * this.radius * this.radius;
   }
 }
 
-// create an instance of each class
-const mustang = new SportsCar("Ford", "Mustang");
-const camry = new Sedan("Toyota", "Camry");
+let shape: Shape = new Rectangle(5, 10);
+console.log(shape.area());
 
-// call the methods on each instance
-mustang.drive(); // "The sporty Ford Mustang is driving fast!"
-mustang.honk(); // "The Ford Mustang is honking."
+shape = new Circle(5);
+console.log(shape.area());
 
-camry.drive(); // "The Toyota Camry is driving."
-camry.honk(); // "The sedan Toyota Camry is honking politely."
+// This demonstrates polymorphism because the same method "area" is being used to perform different actions on different types of objects.
+//Real World Example: Product categories each with their own properties and behaviours.

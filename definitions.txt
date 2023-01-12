@@ -12,4 +12,4 @@ This can help to reduce code duplication and make it easier to create and mainta
 Polymorphism -  This refers to the ability of different objects to respond differently to the same method or message. 
 Polymorphism allows a programmer to write code that can operate on a variety of different objects, even if those objects have different characteristics and behaviors.
 
-Abstraction - Abstraction in OOP is when only the relevent details are given to the user, hiding the unecessary information. 
+Abstraction - Abstraction is the process of hiding the implementation details of a class or a method and providing a simplified interface for interacting with it.

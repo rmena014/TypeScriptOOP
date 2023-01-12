@@ -1,3 +1,6 @@
+// Inheritance is a mechanism in object-oriented programming where a class can inherit properties and methods from a parent class,
+//  allowing for code reuse and a clear structure for organizing complex systems.
+
 class Animals {
   // constructor method
   constructor(public name: string, public species: string) {}
@@ -14,9 +17,11 @@ class Animals {
 }
 
 class Dog extends Animals {
+  //extends = inherting from the animals class
   // constructor method
   constructor(name: string) {
     super(name, "Dog");
+    //calling/accessing the constructor method of parent class
   }
 
   // method to make the dog bark
@@ -24,3 +29,10 @@ class Dog extends Animals {
     return "Woof, woof!";
   }
 }
+
+const fido = new Dog("Rocky");
+console.log(fido.getName()); // Output: "Rocky"
+console.log(fido.getSpecies()); // Output: "Dog"
+console.log(fido.bark()); // Output: "Woof, woof!"
+
+//Real World Example: Operating System design - An operating system performs multiple common functions (resource management, UI, etc) but different OS's can add their own properties and methods (Windows, MacOS, etc)
