@@ -2,16 +2,22 @@
 
 class Shape {
   //base class
+  constructor(public name: string) {}
+
   area(): number {
     return 0;
+  }
+
+  displayName(): string {
+    return `Shape name: ${this.name}`;
   }
 }
 
 class Rectangle extends Shape {
-  //overides the area method
-  constructor(public width: number, public height: number) {
-    super();
+  constructor(name: string, public width: number, public height: number) {
+    super(name);
   }
+  //overides the area method
 
   area(): number {
     return this.width * this.height;
@@ -19,21 +25,23 @@ class Rectangle extends Shape {
 }
 
 class Circle extends Shape {
-  //overides the area method
-  constructor(public radius: number) {
-    super();
+  constructor(name: string, public radius: number) {
+    super(name);
   }
-
+  //overides the area method
   area(): number {
     return 3.14 * this.radius * this.radius;
   }
 }
 
-let shape: Shape = new Rectangle(5, 10);
+let shape: Shape = new Rectangle("Rectangle", 5, 10);
+console.log(shape.displayName());
 console.log(shape.area());
 
-shape = new Circle(5);
+shape = new Circle("Circle", 5);
+console.log(shape.displayName());
 console.log(shape.area());
 
+//Important it because allows for more flexible and dynamic code
 // This demonstrates polymorphism because the same method "area" is being used to perform different actions on different types of objects.
 //Real World Example: Product categories each with their own properties and behaviours.

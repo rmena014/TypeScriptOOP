@@ -35,4 +35,5 @@ console.log(fido.getName()); // Output: "Rocky"
 console.log(fido.getSpecies()); // Output: "Dog"
 console.log(fido.bark()); // Output: "Woof, woof!"
 
+//Importance: Allows for reuse and clear structure
 //Real World Example: Operating System design - An operating system performs multiple common functions (resource management, UI, etc) but different OS's can add their own properties and methods (Windows, MacOS, etc)
